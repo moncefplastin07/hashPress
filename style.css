@@ -4,3 +4,21 @@
     Version: 1.0.0
     Author: Moncef Gaha
 */
+
+.header{
+	height: 200px;
+	background-image: url(screenshot.png);
+	background-size: cover;
+	background-position: center;
+}
+.header-content{
+	background: #343a4033;
+	width: 100% !important;
+}
+nav.top-nav{
+	background: #343a40;
+	padding: 5px;
+}
+nav.top-nav a{
+	color:#fff;
+}
