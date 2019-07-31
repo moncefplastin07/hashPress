@@ -4,7 +4,18 @@
     Version: 1.0.0
     Author: Moncef Gaha
 */
-
+@font-face {
+    font-family: Cairo Regular;
+    src: url("inc/css/fonts/Cairo-Regular.woff2") format("woff2");
+} 
+body{
+	font-family: Cairo Regular;
+}
+@media (max-width: 576px){
+	.post-item .post-description{
+		display: none;
+	}
+}
 .header{
 	height: 200px;
 	background-image: url(screenshot.png);
@@ -21,4 +32,68 @@ nav.top-nav{
 }
 nav.top-nav a{
 	color:#fff;
+}
+.post-main{
+	border-top: 5px solid #00a696;
+}
+.post-item{
+	margin-top: 10px;
+	text-align: center;
+}
+.post-item .post-thumbnail{
+	height: 200px;
+	padding: 0;
+	overflow: hidden;
+}
+.post-item .post-category{
+	padding: 5px;
+	margin: 5px;
+    position: absolute;
+    float: right;
+    z-index: 1;
+    background: #000;
+    border-radius: 5px;
+}
+.post-item .post-category a{
+	color: #fff;
+}
+.post-item .post-thumbnail-img:hover{
+	transform: scale(1.2) rotate(30deg) ;
+
+}
+.post-item .post-thumbnail-img{
+	position: relative;
+	
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+.post-item .post-details{
+	text-align: right;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+}
+
+.post-item .post-details .post-title a{
+	font-weight: 600;
+    color: #1f1f1f;
+    font-size: 20px;
+    letter-spacing: -.45px;
+    text-align: right;
+    line-height: 1.3;
+}
+
+.post-item .post-time-ago{
+	font-size: 11px;
+	text-align: right;
+	font-weight: 600;
+	line-height: 17px;
+	
+}
+.sidebar{
+	border-top: 5px solid #00a696;
 }
