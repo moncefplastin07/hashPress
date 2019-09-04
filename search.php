@@ -1,21 +1,19 @@
 <?php
-function include_the_meta_tags()
-{
-    include_once 'inc/components/single-page-meta-tags.php';
-}
-
 get_header();
 ?>
 <!--Main-->
 <div class="body-warp container">
 	<div class="posts-warp row">
 		<!--main-->
-		<div class="post-main single-post col-lg-7">
+		<div class="post-main col-lg-7">
 			<?php
 			if (have_posts()) {
-				the_post();
-				get_template_part('template-parts/content/content','single');
-				
+				get_template_part('template-parts/content/content','search');
+			}else{
+				?>
+				<h2 class="text-center">لا توجد نتائج "<?php the_search_query()?>"</h2>
+
+				<?php
 			}
 			?>
 		</div>

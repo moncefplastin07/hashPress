@@ -5,7 +5,7 @@ get_header();
 <div class="body-warp container">
 	<div class="posts-warp row">
 		<!--main-->
-		<div class="post-main col-sm-7">
+		<div class="post-main col-lg-7 row">
 			<?php
 			if (have_posts()) {
 				get_template_part('template-parts/content/content');
@@ -15,8 +15,8 @@ get_header();
 		<!--/main-->
 
 		<!--sidebar-->
-		<div class="col-sm-1"></div>
-		<div class="sidebar col-sm-4">
+		<div class="col-lg-1"></div>
+		<div class="sidebar col-lg-4 row">
 			<?php get_sidebar()?>
 		</div>
 		<!--/sidebar-->
