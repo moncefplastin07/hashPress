@@ -382,19 +382,6 @@ function add_post_views_column_content($column_name, $post_ID){
   }
 }
 
-add_action('wp_head','add_google_adsense');
-function add_google_adsense(){?>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-9940004360191218",
-    enable_page_level_ads: true
-  });
-</script>
-<?php
-}
-
-
 function _strcut($str,$max_len,$and_str=''){
   if (strlen($str) > $max_len) {
     return mb_strcut($str,0,$max_len,'UTF-8').$and_str;
