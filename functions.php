@@ -382,7 +382,7 @@ function add_post_views_column_content($column_name, $post_ID){
   }
 }
 
-//add_action('wp_head','add_google_adsense');
+add_action('wp_head','add_google_adsense');
 function add_google_adsense(){?>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>

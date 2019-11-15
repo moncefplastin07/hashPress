@@ -94,8 +94,10 @@ the_content();
     <?php
     // new wp_query object to get similar post of the current post displayed
     $args = array(
+		'posts_per_page' => 4,
         'cat' => get_cat(get_the_ID(),0,'cat_ID'),
-        'post__not_in' => array(get_the_ID())
+        'post__not_in' => array(get_the_ID()
+		)
     );
 
     $query = new WP_Query($args);
@@ -136,7 +138,8 @@ the_content();
             <?php
 
         }
-        if ($query->post_count > 4) {
+
+        if ($query->found_posts > 4) {
             ?>
 
             <a href="<?php echo get_category_link(get_cat(get_the_ID(),0,'cat_ID')) ?>" class="btn btn-dark">

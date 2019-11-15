@@ -437,6 +437,7 @@ nav.header-menu-nav {
 }
 .post-header .attachment-post-thumbnail{
 	width: 100%;
+	height: auto;
 }
 .post-header .post-title{
 	font-size: 2rem;
@@ -459,6 +460,8 @@ nav.header-menu-nav {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+	left: 0;
+	right: 0;
 	background: rgba(0,0,0 ,.65);
 	color: #fff;
 	padding: 2px;
