@@ -1,9 +1,4 @@
 <?php
-function include_the_meta_tags()
-{
-    include_once 'inc/components/single-page-meta-tags.php';
-}
-
 get_header();
 ?>
 <!--Main-->
